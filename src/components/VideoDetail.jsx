@@ -28,7 +28,7 @@ const VideoDetail = () => {
       <Stack>
         <Box flex={1}>
           <Box sx={{width:'100%', position:'sticky', top:0}}>
-            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className='react-player' controls/>
+            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className='react-player max-md:h-[50%]' controls/>
             <Typography color='#fff' variant='h5' fontWeight='bold' p={2}>
               {title}
             </Typography>
