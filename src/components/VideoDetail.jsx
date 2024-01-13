@@ -27,7 +27,7 @@ const VideoDetail = () => {
     <Box minHeight="90vh">
       <Stack>
         <Box flex={1}>
-          <Box sx={{width:'100%', height: '70%', position:'sticky', top:0}}>
+          <Box sx={{width:'100%', height: 350, position:'sticky', top:0}}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className='react-player' controls/>
             <Typography color='#fff' variant='h5' fontWeight='bold' p={2}>
               {title}
@@ -50,7 +50,7 @@ const VideoDetail = () => {
             </Stack>
           </Box>
 
-          <Box px={2} py={{md:1, xs:5}} justifyContent='center' alignItems='center'>
+          <Box px={2} py={{md:1, xs:5}} justifyContent='center' alignItems='center' mt={20}>
            <Videos videos={videos} />
           </Box>
 
